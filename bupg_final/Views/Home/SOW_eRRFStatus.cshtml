@@ -1,0 +1,89 @@
+@{
+    ViewData["Title"] = "SOW_eRRFStatus";
+}
+<h4>SOW/eRRF Status</h4><br> 
+
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto auto ;
+ 
+  
+
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  
+  font-size: 15px;
+  
+}
+
+.grid-button {
+    padding: 0.75rem;
+  font-size: 15px;
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="grid-item">
+         <div class="div1">
+           <p>Select Search Type
+            &nbsp&nbsp&nbsp&nbsp <input type="radio" id="SOW" name="Type" value="SOW">
+            <label for="SOW">SOW</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="radio" id="ERRF" name="Type" value="ERRF">
+            <label for="ERRF">ERRF</label><br><br><br>
+           </p>
+          </div>
+          <style> 
+
+          .div1 {
+             background-color: antiquewhite;
+              padding: 0.75rem;
+            
+            height: 50px;
+            
+          }
+          </style>
+
+  </div>
+  <div class="grid-item">
+        <div class="div2">
+            <label for="SOW">SOW#</label>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="SOW" name="SOW">
+              <label for="Portfolio">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>OR</b>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Portfolio</label>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select id="Portfolio" name="Portfolio">
+                <option value="Select">Select</option>
+                
+              </select>
+               
+            </div>
+            <style> 
+
+            .div2 {
+               background-color: antiquewhite;
+                padding: 0.75rem;
+                height: 50px;
+              
+            }
+            </style>
+
+
+  </div>
+  <div class="grid-button">
+        <button type="submit" value="Submit">Submit</button>
+  </div>
+</div>
+
+
+
+</body>
+</html>

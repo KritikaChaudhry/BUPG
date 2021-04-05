@@ -1,0 +1,85 @@
+
+@{
+    ViewData["Title"] = "Allocation Detail";
+}
+<h4>Allocation Detail</h4><br> 
+
+
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto ;
+ 
+  
+
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  
+  font-size: 15px;
+  
+}
+
+.grid-button {
+   padding: 0.75rem;
+  font-size: 15px;
+  
+}
+
+.div1 {
+             background-color: antiquewhite;
+              padding: 0.75rem;
+            
+            height: 50px;
+            
+          }
+
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="div1">
+           <p>
+                <label for="Cluster">Cluster &nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                    <select id="cluster" name="Cluster">
+                        <option value="Select">Select</option>
+                    </select>
+                    &nbsp&nbsp
+                <label for="Status">Status &nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                    <select id="status" name="Status">
+                        <option value="Select1">Select</option>
+                    </select>
+                    &nbsp&nbsp
+                <label for="Name">Name &nbsp;&nbsp;</label>
+                    <input type="text" id="textbx">
+                    &nbsp&nbsp
+                <label for="Exit Status">Exit Status &nbsp;&nbsp;</label> 
+                    <select id="Exit Status" name="Exit Status">
+                        <option value="Select2">Select</option>
+                    </select>
+                    &nbsp&nbsp
+                <input type="checkbox" id="checkbx">
+                <label for="All">All &nbsp;&nbsp;</label>
+                &nbsp&nbsp
+                <button type="search" value="Search">Search &nbsp;&nbsp;</button>
+                <br><br><br>
+           </p>
+        </div>
+    </div>
+
+  
+    <div class="grid-button">
+        <button type="submit" value="SaveChanges">Save Changes</button>
+    </div>
+</div>
+
+</body>
+</html>

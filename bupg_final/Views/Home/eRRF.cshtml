@@ -1,0 +1,80 @@
+@{
+    ViewData["Title"] = "eRRF";
+}
+<h4>eRRF</h4><br> 
+
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+ 
+  grid-template-columns: auto ;
+ 
+  
+
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  
+  font-size: 16px;
+  
+}
+
+.grid-button {
+  float: right;
+  font-size: 15px;
+  
+}
+
+ .div1 {
+             background-color: antiquewhite;
+              padding: 0.75rem;
+            
+            height: 50px;
+            
+          }
+</style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item">
+        <div class="div1">
+            <label for="eRRF">eRRF #&nbsp;&nbsp;</label>
+            <input type="text" id="eId" name="eId" size="10">
+            &nbsp&nbsp&nbsp
+            <label for="cluster">Cluster&nbsp;&nbsp;</label>
+            <input type="text" id="cluster" name="cluster"size="10">
+            &nbsp&nbsp&nbsp
+            <label for="portfolio">Portfolio&nbsp;</label>
+            <input type="text" id="portfolio" name="portfolio"size="10">
+            &nbsp&nbsp&nbsp
+            <label for="name">Name&nbsp;&nbsp;</label>
+            <input type="text" id="Cname" name="Cname"size="10">
+            &nbsp&nbsp&nbsp
+            <input type ="radio" id ="all" name="status" value="All">
+            <label for="All">All</label>
+            &nbsp&nbsp&nbsp
+            <input type ="radio" id ="active" name="status" value="Active">
+            <label for="Active">Active</label>
+            &nbsp&nbsp&nbsp
+            <select name="Ways" id="ways" >
+              <option value="all" >All</option>
+              <option value=""></option>
+            </select>
+            &nbsp&nbsp&nbsp
+            <input type="submit" value="Search">
+        </div>
+      </div>
+  </div>
+  <br>
+  <div class="grid-button">
+      <input type="button" value="Upload New eRRF" onclick="document.location='/Home/Upload_eRRF'">
+      <input type="button" value ="Upload Selection"  onclick="document.location='/Home/Upload'">
+  </div>
+  
+</body>
+</html>

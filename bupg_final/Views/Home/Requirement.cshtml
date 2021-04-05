@@ -1,0 +1,80 @@
+@{
+    ViewData["Title"] = "Requirements";
+}
+<h3>@ViewData["Title"]</h3>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  
+  font-size: 17px;
+  
+}
+ .div1 {
+            background-color: antiquewhite;
+            padding: 0.75rem;
+            
+            height: 50px;
+            
+          }
+
+.grid-button {
+  float: right;
+  font-size: 15px;
+  
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+    <div class="grid-item">
+         <div class="div1">
+            <p>Cluster
+              <select id="cluster" name="cluster">
+              <option>select </option>
+              </select>
+              &nbsp&nbsp&nbsp&nbsp
+              <b>OR</b>
+              &nbsp&nbsp&nbsp&nbsp
+              <label for="skillg">Skill Group</label>
+              <select id="skillg" name="skillg">
+              <option>select </option>
+              </select>
+              &nbsp&nbsp&nbsp&nbsp
+              <b>OR</b>
+              &nbsp&nbsp&nbsp&nbsp
+              <label for="Skill">Skill</label>
+              <input type="text" name="text">
+              &nbsp&nbsp&nbsp&nbsp
+              <input type="checkbox" name="showall">
+              <label for="ShowAll"> Show All</label>
+              &nbsp&nbsp&nbsp&nbsp
+              <input type="checkbox" name="activeonly">
+              <label for="ActiveOnly">Active Only</label>
+              &nbsp&nbsp&nbsp&nbsp
+              <button type="submit" value="Search">Search</button>
+            </p> 
+          </div>
+    </div>
+</div>
+<br>
+  <div class="grid-button">
+        <button type="submit" value="Save">Save</button>
+        
+        <button value="New Entry">New Entry</button>
+  </div>
+
+
+
+</body>
+</html>
